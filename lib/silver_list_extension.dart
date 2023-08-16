@@ -14,7 +14,7 @@ extension SilverListExtension<T> on List<T> {
 
   /// Gets the last element that satisfies the given predicate or null.
   T? lastWhereOrNull(bool Function(T element) test) {
-    final lastIndex = lastIndexWhere((element) => false);
+    final lastIndex = lastIndexWhere(test);
 
     if (lastIndex == -1) {
       return null;
