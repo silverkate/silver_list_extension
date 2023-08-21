@@ -12,4 +12,6 @@ void main() {
   print(list);
   list.replace('1', '12345678');
   print(list);
+  list.replaceAt(0, 'replacement');
+  print(list);
 }

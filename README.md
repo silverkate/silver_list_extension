@@ -2,7 +2,7 @@ Some useful extensions to the list.
 
 ## Features
 
-This package has 5 extensions for the List.
+This package has 6 extensions for the List.
 
 ## Usage
 
