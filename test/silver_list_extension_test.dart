@@ -46,4 +46,12 @@ void main() {
 
     expect(list, ['replacement', 'two', 'three']);
   });
+
+  test('Test replaceAt', () {
+    final list = ['one', 'two', 'three'];
+
+    list.replaceAt(0, 'replacement');
+
+    expect(list, ['replacement', 'two', 'three']);
+  });
 }

@@ -23,7 +23,7 @@ extension SilverListExtension<T> on List<T> {
     }
   }
 
-  /// Returns random element.
+  /// Returns random element or null if the list is empty.
   T? randomOrNull() {
     if (length < 1) {
       return null;
@@ -47,5 +47,14 @@ extension SilverListExtension<T> on List<T> {
     if (index != -1) {
       this[index] = replacement;
     }
+  }
+
+  /// Replaces the element by the index.
+  void replaceAt(int index, T replacement) {
+    if (index >= length) {
+      return;
+    }
+
+    this[index] = replacement;
   }
 }
